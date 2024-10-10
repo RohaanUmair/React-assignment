@@ -4,7 +4,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import img from '../assets/Logo.png';
+import img from 'src/assets/Logo.png';
 
 export default function Header() {
   return (
