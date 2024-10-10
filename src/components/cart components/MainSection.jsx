@@ -1,4 +1,4 @@
-import CartItem from './cartItem';
+import CartItem from './CartItem';
 import './mainSection.css';
 
 function MainSection() {
