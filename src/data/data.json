@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Slytherine",
+    "desc": "Stylish Cafe Chair",
+    "price": "2.500.000",
+    "img": "src/assets/data-imgs/image 1.png",
+    "isNew": "false",
+    "discount": 30,
+    "id": 1
+  },
+  {
+    "title": "Leviosa",
+    "desc": "Stylish Cafe Chair",
+    "price": "2.500.000",
+    "img": "src/assets/data-imgs/image 2.png",
+    "isNew": "false",
+    "discount": 0,
+    "id": 2
+  },
+  {
+    "title": "Lolito",
+    "desc": "Luxury Big Sofa",
+    "price": "7.000.000",
+    "img": "src/assets/data-imgs/image 3.png",
+    "isNew": "false",
+    "discount": 50,
+    "id": 3
+  },
+  {
+    "title": "Respira",
+    "desc": "Outdoor bar table and stool",
+    "price": "500.000",
+    "img": "src/assets/data-imgs/image 6.png",
+    "isNew": "true",
+    "discount": 0,
+    "id": 4
+  },
+  {
+    "title": "Grifo",
+    "desc": "Night Lamp",
+    "price": "1.500.000",
+    "img": "src/assets/data-imgs/image 7.png",
+    "isNew": "false",
+    "discount": 30,
+    "id": 5
+  },
+  {
+    "title": "Muggo",
+    "desc": "Stylish Cafe Chair",
+    "price": "2.500.000",
+    "img": "src/assets/data-imgs/image 8.png",
+    "isNew": "false",
+    "discount": 0,
+    "id": 6
+  },
+  {
+    "title": "Pingky",
+    "desc": "Cute Bed Sheet",
+    "price": "7.000.000",
+    "img": "src/assets/data-imgs/image 9.png",
+    "isNew": "false",
+    "discount": 50,
+    "id": 7
+  },
+  {
+    "title": "Potty",
+    "desc": "",
+    "price": "500.000",
+    "img": "src/assets/data-imgs/image 2.png",
+    "isNew": "true",
+    "discount": 0,
+    "id": 8
+  }
+]

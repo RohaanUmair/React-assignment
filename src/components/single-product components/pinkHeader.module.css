@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    background-color: #f9f1e7;
+    width: 100%;
+    gap: 10px;
+    padding-left: 120px;
+}
+
+.header_links{
+    font-size: 16px;
+    font-weight: 400;
+    color: #9f9f9f;
+}
+
+.product_name{
+    font-size: 16px;
+    font-weight: 400;
+    border-left: 2px solid #9f9f9f;
+    width: 142px;
+    text-align: center;
+}

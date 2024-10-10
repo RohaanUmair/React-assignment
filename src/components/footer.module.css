@@ -1,0 +1,89 @@
+footer{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.17);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .upper_sec{
+    display: flex;
+    justify-content: space-between;
+    width: 1133px;
+    height: 390px;
+    margin-inline: auto;
+    padding-block: 46px;
+    padding-right: 40px;
+}
+
+footer .lower_sec{
+    width: 1133px;
+    justify-content: space-between;
+    width: 1133px;
+    margin-inline: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.17);
+    display: flex;
+    align-items: center;
+    height: 90px
+}
+
+footer .lower_sec p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.links, .help{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.heading{
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.under_heading{
+    color: #9f9f9f;
+    font-size: 16px;
+}
+
+.sub_heading{
+    color: #9f9f9f;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer_text{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.email_input{
+    margin-top: 40px;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: "Poppins";
+    width: 185px;
+    margin-right: 50px;
+    border-bottom: 2px solid #9f9f9f;
+    padding-block: 5px;
+}
+
+.upper_sec button{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #9f9f9f;
+    padding-bottom: 5px;
+    font-weight: 500;
+    color: #000000;
+    font-family: "Poppins";
+}

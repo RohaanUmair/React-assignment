@@ -1,0 +1,98 @@
+.section{
+    width: 100%;
+    height: 100px;
+    background-color: #f9f1e7;
+    display: flex;
+    padding-inline: 100px;
+}
+
+.right, .left{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.left div{
+    display: flex;
+    align-items: center;
+    width: 245px;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+
+.filter_icon{
+    font-size: 25px;
+    transform: rotate(90deg) translateY(-20px);
+}
+
+.filter{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.grid_icon, .viewList_icon{
+    font-size: 25px;
+}
+
+.showing_text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.right{
+    justify-content: space-between;
+    gap: 40px;
+    justify-content: right;
+}
+
+.rightText{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.show_input{
+    height: 55px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #9f9f9f;
+    border: none;
+    text-align: center;
+    outline: none;
+}   
+.show_input::-webkit-outer-spin-button,
+.show_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.sortBy_input{
+    width: 188px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #9f9f9f;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+
+.rightside_div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}

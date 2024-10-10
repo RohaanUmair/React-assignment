@@ -1,0 +1,53 @@
+.main{
+    height: 685px;
+    width: 100%;
+}
+
+.heading-sec{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-block: 40px;
+}
+
+.main-heading{
+    font-weight: 700;
+    font-size: 32px;
+    color: #333333;
+}
+
+.main-desc{
+    font-weight: 400;
+    font-size: 20px;
+    color: #666666;
+}
+
+.img-card-sec{
+    width: 381px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.img-card-sec:hover{
+    scale: 1.03;
+}
+
+.type-img{
+    height: 480px;
+    width: 381px;border-radius: 10px;
+}
+
+.card-heading{
+    font-weight: 600;
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card-holder{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+}

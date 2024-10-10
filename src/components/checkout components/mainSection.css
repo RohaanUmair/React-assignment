@@ -1,0 +1,127 @@
+.checkout-main-sec{
+    height: 1750px;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.checkout-main-sec .checkout-billingDetails{
+    width: 453px;
+}
+
+.checkout-main-sec .checkout-productDetails{
+    width: 510px;
+}
+
+.checkout-main-sec .checkout-billingDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.heading-billingDetails{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.chechout-form-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chechout-form-section label{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.chechout-form-section input{
+    border: 1px solid #9f9f9f;
+    height: 75px;
+    width: 453px;
+    border-radius: 10px;
+    outline: none;
+    padding-inline: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+
+.name-section-inputs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-productDetails .space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-productDetails .headings h1{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.checkout-productDetails .products .product-name{
+    font-size: 16px;
+    font-weight: 400;
+    color: #9f9f9f;
+}
+
+.checkout-productDetails .products .product-price{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.total_subtotal-heading{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.total-price{
+    font-size: 24px;
+    font-weight: 700;
+    color: #b88e2f;
+}
+
+.checkout-productDetails .upper-div{
+    border-bottom: 1px solid black;
+}
+
+.checkout-main-sec .checkout-productDetails .sub-heading-products{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkout-productDetails .upper-div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-block: 40px;
+}
+
+.circle-icon{
+    font-size: 14px;
+}
+
+.checkout-productDetails .lower-div{
+    display: flex;
+    flex-direction: column;
+    padding-block: 40px;
+    gap: 20px;
+}
+
+.place-order-btn{
+    width: 318px;
+    height: 64px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Poppins";
+    margin-top: 20px;
+}

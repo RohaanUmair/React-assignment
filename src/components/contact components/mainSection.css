@@ -1,0 +1,38 @@
+.contact-main-sec{
+    height: 950px;
+    width: 100%;
+}
+
+.contact-main-sec .upper-div{
+    text-align: center;
+    margin-block: 80px;
+}
+
+.contact-main-sec .lower-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.details-card{
+    display: flex;
+}
+
+.details-card div{
+    width: 212px;
+}
+
+.details-card div h1{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.details-card div p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.lower-div .details-section{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

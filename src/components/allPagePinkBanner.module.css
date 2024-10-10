@@ -1,0 +1,37 @@
+.banner{
+    height: 270px;
+    width: 100%;
+    background-color: #faf3ea;
+    margin-top: 40px;
+    display: flex;
+    padding-inline: 50px;
+    justify-content: space-around;
+}
+
+.primary_div{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.secondary_div{
+    display: flex;
+    flex-direction: column;
+}
+
+.icons{
+    font-size: 60px;
+    color: #242424;
+}
+
+.primary_div .secondary_div h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #242424;
+}
+
+.primary_div .secondary_div p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #898989;
+}

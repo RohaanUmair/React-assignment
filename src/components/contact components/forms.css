@@ -1,0 +1,41 @@
+.form-input-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.form-input-sec label{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form-input-sec input{
+    width: 528px;
+    height: 75px;
+    border: 1px solid #9f9f9f;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-submit-btn{
+    height: 55px;
+    width: 237px;
+    background-color: #b88e2f;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins";
+}

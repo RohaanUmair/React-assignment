@@ -1,0 +1,155 @@
+.upper_sec{
+    height: 100%;
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.product_imgs{
+    width: 520px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_imgs div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85%;
+}
+
+.product_imgs div img{
+    width: 76px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.product_imgs img{
+    width: 423px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.main_details{
+    width: 606px;
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.star_icons{
+    font-size: 24px;
+    color: #ffc700;
+    margin-right: 10px;
+}
+
+.main_details h3{
+    font-size: 14;
+    font-weight: 400;
+    color: #9f9f9f;
+}
+
+.size_section button{
+    width: 30px;
+    height: 30px;
+    font-family: "Poppins";
+    background-color: #f9f1e7;
+    border: none;
+    margin-right: 14px;
+    border-radius: 5px;
+}
+
+.bottom_btns{
+    width: 215px;
+    height: 64px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Poppins";
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+
+.small_details{
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #d9d9d9;
+    margin-top: 40px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+.small_details div{
+    display: flex;
+    margin-top: 10px;
+}
+
+.small_details div h5{
+    font-size: 16px;
+    width: 90px;
+    font-weight: 400;
+    color: #9f9f9f;
+}
+
+.small_details div p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #9f9f9f;
+    word-spacing: 6px;
+}
+
+.small_details .icons{
+    font-size: 20px;
+    color: black;
+    margin-left: 12px;
+}
+
+
+
+
+.lower_sec{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    padding-block: 40px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.lower_sec .selectors{
+    display: flex;
+    gap: 52px;
+}
+
+.lower_sec .selectors button{
+    background-color: transparent;
+    border: none;
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.lower_sec p{
+    font-size: 17px;
+    line-height: 21px;
+    text-align: justify;
+    color: #9f9f9f;
+    font-weight: 400;
+}
+
+.lower_sec img{
+    width: 550px;
+    height: 348px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}

@@ -1,0 +1,54 @@
+.inspirations_sec{
+    margin-top: 40px;
+    width: 100%;
+    height: 670px;
+    display: flex;
+    background-color: #fcf8f3;
+    padding-inline: 100px;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 422px;
+    gap: 15px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.left h1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #3a3a3a;
+}
+
+.left p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #616161;
+}
+
+.left button{
+    width: 176px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Poppins";
+    border: none;
+    background-color: #b88e2f;
+    color: #ffffff;
+}
+
+.right img{
+    height: 582px;
+    width: 404px;
+}

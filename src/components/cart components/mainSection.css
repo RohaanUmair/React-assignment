@@ -1,0 +1,73 @@
+.cart-main-sec{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 30px;
+    padding-block: 70px;
+    justify-content: center;
+}
+
+.cart-main-sec .product-details .header{
+    display: flex;
+    background-color: #f9f1e7;
+    width: 780px;
+    height: 55px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cart-main-sec .product-details .header h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cart-main-sec .cart-totals{
+    height: 350px;
+    width: 380px;
+    background-color: #f9f1e7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 40px;
+    gap: 20px;
+}
+
+.cart-main-sec .cart-totals h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.cart-main-sec .cart-totals div{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+#checkout-btn{
+    width: 222px;
+    height: 59px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins";
+    transform: translateY(30px);
+}
+
+.cart-main-sec .cart-totals .heading{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cart-main-sec .cart-totals #sub-total{
+    font-size: 16px;
+    font-weight: 400;
+    color: #9f9f9f;
+}
+
+.cart-main-sec .cart-totals #total{
+    font-size: 20px;
+    font-weight: 500;
+    color: #b88e2f;
+}
