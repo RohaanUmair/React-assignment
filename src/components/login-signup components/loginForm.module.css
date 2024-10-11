@@ -1,0 +1,78 @@
+.whole_page{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #9f9f9f;
+}
+
+.whole_page form{
+   display: flex; 
+   flex-direction: column;
+   gap: 20px;
+}
+
+.whole_page form h1{
+    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 10px;
+}
+
+.whole_page form div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.whole_page form div label{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.whole_page form div input{
+    border: 1px solid #9f9f9f;
+    font-size: 17px;
+    width: 400px;
+    border-radius: 10px;
+    padding-left: 50px;
+    font-family: "Poppins";
+    outline: 1px #b88e2f;
+    padding-block: 15px;
+    transition: border linear 0.2s;
+    padding-right: 10px;
+}
+.whole_page form div input:focus{
+    border: 1px solid #b88e2f;
+}
+
+.whole_page form button{
+    width: 200px;
+    height: 50px;
+    background-color: #b88e2f;
+    border: none;
+    font-size: 15px;
+    color: white;
+    font-family: "Poppins";
+    border-radius: 5px;
+}
+
+.icons{
+    font-size: 25px;
+    color: #9f9f9f;
+    position: absolute;
+    transform: translate(18px, 52px);
+}
+
+.whole_page form p{
+    color: #9f9f9f;
+}
+
+.whole_page form span{
+    color: rgb(81, 81, 242);
+    font-weight: 500;
+    cursor: pointer;
+}
+.whole_page form span:hover{
+    text-decoration: underline;
+}
