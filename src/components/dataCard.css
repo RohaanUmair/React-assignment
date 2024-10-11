@@ -55,6 +55,12 @@
     font-family: "Poppins";
     color: #b88e2f;
     font-weight: 600;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.showmore-btn:hover{
+    background-color: #b88e2f;
+    color: white;
 }
 
 .circle-new, .circle-discount{

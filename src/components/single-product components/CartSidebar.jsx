@@ -5,7 +5,7 @@ import CartSidebarProduct from './CartSidebarProduct';
 
 
 
-function CartSidebar() {
+function CartSidebar({ setOpenSidebar }) {
     return (
         <div className={styles.wholePage_div}>
             <div className={styles.cart_sidebar}>
@@ -14,9 +14,9 @@ function CartSidebar() {
                     <div className={styles.header}>
                         <h1>Shopping Cart</h1>
 
-                        <div style={{position: 'relative'}}>
-                            <IoBagOutline style={{fontSize: 25, position: 'relative', color: '#9f9f9f'}} />
-                            <IoIosClose style={{fontSize: 18, position: 'absolute', left: 4, top: 6, color: '#9f9f9f'}} />
+                        <div style={{position: 'relative'}} onClick={() => setOpenSidebar(false)} >
+                            <IoBagOutline style={{fontSize: 25, position: 'relative'}} className={styles.close_icon} />
+                            <IoIosClose style={{fontSize: 18, position: 'absolute', left: 4, top: 6}} className={styles.close_icon} />
                         </div>
                     </div>
 

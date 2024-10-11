@@ -50,4 +50,12 @@
     margin-top: 50px;
     outline: none;
     border: none;
+    cursor: pointer;
+    transition: background-color linear 0.2s;
+}
+.rectangle button:hover{
+    background-color: white;
+    color: #B88E2F;
+    border: 2px solid #B88E2F;
+    font-size: 18px;
 }

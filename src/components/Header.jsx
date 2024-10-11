@@ -4,13 +4,12 @@ import { IoSearchOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import img from 'src/assets/Logo.png';
 
 export default function Header() {
   return (
     <header>
       <div className="section1">
-        <img className="logo" src={img} alt="logo" />
+        <img className="logo" src="src/assets/Logo.png" alt="logo" />
         <h1 className="logo-text">Furniro</h1>
       </div>
 

@@ -74,6 +74,16 @@
     font-family: "Poppins";
     background-color: transparent;
     border-radius: 15px;
+    cursor: pointer;
+    transition: all linear 0.1s;
+}
+.bottom_btns:hover{
+    background-color: #b88e2f;
+    border: 1px solid #b88e2f;
+    color: white;
+}
+.bottom_btns:active{
+    color: black;
 }
 
 

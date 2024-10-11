@@ -63,6 +63,9 @@ footer .lower_sec p{
     font-weight: 500;
     color: #000000;
 }
+.footer_text:hover{
+    color: #b88e2f;
+}
 
 .email_input{
     margin-top: 40px;

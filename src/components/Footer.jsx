@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./footer.module.css";
 
 function Footer() {
@@ -14,11 +15,25 @@ function Footer() {
 
         <div className="links">
           <ul className={styles.links}>
-            <li className={styles.sub_heading}>Links</li>
-            <li className={styles.footer_text}>Home</li>
-            <li className={styles.footer_text}>Shop</li>
-            <li className={styles.footer_text}>About</li>
-            <li className={styles.footer_text}>Contact</li>
+            <Link style={{textDecoration: 'none', color: 'black'}}>
+              <li className={styles.sub_heading}>Links</li>
+            </Link>
+
+            <Link style={{textDecoration: 'none', color: 'black'}} to={'/'} >
+              <li className={styles.footer_text}>Home</li>
+            </Link>
+            
+            <Link style={{textDecoration: 'none', color: 'black'}} to={'/shop'} >
+              <li className={styles.footer_text}>Shop</li>
+            </Link>
+            
+            <Link style={{textDecoration: 'none', color: 'black'}} to={'/'} >
+              <li className={styles.footer_text}>About</li>
+            </Link>
+
+            <Link style={{textDecoration: 'none', color: 'black'}} to={'/contact'} >
+              <li className={styles.footer_text}>Contact</li>
+            </Link>
           </ul>
         </div>
 
@@ -34,7 +49,11 @@ function Footer() {
         <div className="newsletter">
           <p className={styles.sub_heading}>Newsletter</p>
           <div>
-            <input type="email" placeholder="Enter Your Email Address" className={styles.email_input} />
+            <input
+              type="email"
+              placeholder="Enter Your Email Address"
+              className={styles.email_input}
+            />
             <button>Subscribe</button>
           </div>
         </div>

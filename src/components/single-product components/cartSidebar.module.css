@@ -117,3 +117,11 @@
     height: 40px;
     font-family: "Poppins";
 }
+
+.close_icon{
+    color: #9f9f9f;
+    cursor: pointer;
+}
+.close_icon:hover{
+    color: black;
+}

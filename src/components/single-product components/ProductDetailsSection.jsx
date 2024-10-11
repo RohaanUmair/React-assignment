@@ -7,7 +7,7 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 
 
 
-function ProductDetailsSection() {
+function ProductDetailsSection({ setOpenSidebar }) {
     return (
         <>
         <section className={styles.upper_sec}>
@@ -68,7 +68,7 @@ function ProductDetailsSection() {
                         <button style={{ fontSize: 18, fontWeight: 400, backgroundColor: 'transparent', border: 'none' }}>+</button>
                     </div>
 
-                    <button className={styles.bottom_btns}>Add To Cart</button>
+                    <button className={styles.bottom_btns} onClick={() => setOpenSidebar(true)}>Add To Cart</button>
 
                     <button className={styles.bottom_btns}>+ Compare</button>
                 </div>
