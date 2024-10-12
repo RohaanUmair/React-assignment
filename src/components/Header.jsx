@@ -5,7 +5,7 @@ import { IoMdHeartEmpty } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header({ isUserLoggedIn }) {
   return (
     <header>
       <div className="section1">
@@ -32,10 +32,13 @@ export default function Header() {
         </ul>
       </div>
 
+
       <div className="section3">
-        <Link to={'/login'} style={{height: 30}} >
+
+        <Link to={isUserLoggedIn? '/signedin' : '/login'} style={{height: 30}} >
           <RiUserSettingsLine className="icons" />
         </Link>
+
         <IoSearchOutline className="icons" />
         <IoMdHeartEmpty className="icons" />
 
@@ -43,6 +46,7 @@ export default function Header() {
           <IoCartOutline className="icons" />
         </Link>
       </div>
+
     </header>
   );
 }

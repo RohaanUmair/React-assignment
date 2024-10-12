@@ -1,6 +1,12 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    onAuthStateChanged,
+    signOut,
+} from "firebase/auth";
 
 
 const firebaseConfig = {
@@ -20,6 +26,20 @@ const auth = getAuth(app);
 
 
 
+function isUserLoggedIn() {
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            const uid = user.uid;
+            console.log('User Logged In');
+            return true;
+        } else {
+            console.log('User Not Logged In');
+            return false;
+        }
+    });
+}
+
+
 function createAccount(auth, email, password) {
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
@@ -31,6 +51,27 @@ function createAccount(auth, email, password) {
         });
 }
 
+
+function loginUser(auth, email, password) {
+    signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            const user = userCredential.user;
+            alert('User logged in');
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            alert(errorMessage);
+        });
+}
+
+
+signOut(auth)
+    .then(() => {
+
+    })
+    .catch((error) => {
+    });
 
 
 
@@ -46,5 +87,8 @@ export {
     analytics,
     createUserWithEmailAndPassword,
     auth,
-    createAccount
+    createAccount,
+    loginUser,
+    isUserLoggedIn,
+    signOut
 }
