@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./inspirationsSec.module.css";
 
 function InspirationsSec() {
@@ -11,7 +12,9 @@ function InspirationsSec() {
           Our Designer already made a lot of beautiful <br /> prototipe of rooms
           that inspire you
         </p>
-        <button>Explore More</button>
+        <Link to={'/shop'}>
+          <button>Explore More</button>
+        </Link>
       </div>
 
       <div className={styles.right}>

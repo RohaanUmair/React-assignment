@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './banner.css';
 
 export default function Banner() {
@@ -8,7 +9,9 @@ export default function Banner() {
                 <h2>New Arrival</h2>
                 <h1>Discover Our <br /> New Collection</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aperiam placeat earum. Culpa.</p>
-                <button>BUY NOW</button>
+                <Link to={'/shop'}>
+                    <button>BUY NOW</button>
+                </Link>
             </section>
         </section>
     )

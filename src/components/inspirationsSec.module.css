@@ -46,6 +46,16 @@
     border: none;
     background-color: #b88e2f;
     color: #ffffff;
+    cursor: pointer;
+    transition: background-color, color linear 0.1s;
+}
+.left button:hover{
+    background-color: white;
+    color: #b88e2f;
+    border: 1px solid #b88e2f;
+}
+.left button:active{
+    scale: 0.9;
 }
 
 .right img{

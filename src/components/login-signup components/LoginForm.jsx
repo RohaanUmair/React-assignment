@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./loginForm.module.css";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoIosUnlock } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 
 function LoginForm() {
@@ -32,7 +33,11 @@ function LoginForm() {
                     />
                 </div>
 
-                <p>Don't have an account? <span>Sign up here</span>.</p>
+                <p>Don't have an account? 
+                    <Link to={'/signup'} style={{textDecoration: 'none'}} >
+                        <span>Sign up here</span>
+                    </Link>
+                .</p>
 
                 <button type="submit">Login</button>
             </form>

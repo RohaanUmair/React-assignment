@@ -33,7 +33,9 @@ export default function Header() {
       </div>
 
       <div className="section3">
-        <RiUserSettingsLine className="icons" />
+        <Link to={'/login'} style={{height: 30}} >
+          <RiUserSettingsLine className="icons" />
+        </Link>
         <IoSearchOutline className="icons" />
         <IoMdHeartEmpty className="icons" />
 

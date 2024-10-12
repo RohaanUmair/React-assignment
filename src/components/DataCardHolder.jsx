@@ -3,6 +3,7 @@ import productsData from "../data/data.json";
 
 import React from "react";
 import DataCard from "./DataCard";
+import { Link } from "react-router-dom";
 
 function DataCardHolder({ showMoreBtn, n }) {
   let data = productsData;
@@ -38,7 +39,9 @@ function DataCardHolder({ showMoreBtn, n }) {
 
         {showMoreBtn ? (
           <div>
-            <button className="showmore-btn">Show More</button>
+            <Link to={'/shop'}>
+              <button className="showmore-btn">Show More</button>
+            </Link>
           </div>
         ) : null}
       </div>
