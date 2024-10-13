@@ -10,7 +10,7 @@ function DataCard({ imgSrc, title, desc, price, isNew, discount, id }) {
 
 
   return (
-    <Link to={`/product/${id}`}>
+    <Link to={`/product/${id}`} style={{textDecoration: 'none'}} >
       <div className="card">
         <img className="img" src={imgSrc} />
         {

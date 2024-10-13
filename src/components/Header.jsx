@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header>
       <div className="section1">
-        <img className="logo" src="src/assets/Logo.png" alt="logo" />
+        <img className="logo" src="/assets/Logo.png" alt="logo" />
         <h1 className="logo-text">Furniro</h1>
       </div>
 

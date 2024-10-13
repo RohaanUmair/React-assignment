@@ -4,14 +4,11 @@ import { PiStarHalfFill } from "react-icons/pi";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
-import productsData from '../../data/data.json';
 import { useParams } from 'react-router-dom';
 
 
 
-function ProductDetailsSection({ setOpenSidebar }) {
-    const { id } = useParams();
-    const product = productsData.find((product) => product.id == id);
+function ProductDetailsSection({ setOpenSidebar, product }) {
 
     return (
         <>
@@ -19,10 +16,10 @@ function ProductDetailsSection({ setOpenSidebar }) {
 
             <div className={styles.product_imgs}>
                 <div>
-                    <img src={product.img} />
-                    <img src={product.img} />
-                    <img src={product.img} />
-                    <img src={product.img} />
+                    <img src={`${product.img}`} />
+                    <img src={`${product.img}`} />
+                    <img src={`${product.img}`} />
+                    <img src={`${product.img}`} />
                 </div>
 
                 <img src={product.img} />
@@ -46,7 +43,7 @@ function ProductDetailsSection({ setOpenSidebar }) {
                     </p>
                 </div>
 
-                <p style={{ fontSize: 13, fontWeight: 400, width: 500, lineHeight: 1.7 }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni repudiandae voluptas voluptatem inventore fugiat quo iste excepturi magnam, nihil laboriosam quaerat, temporibus delectus reprehenderit, quasi vel eligendi.</p>
+                <p style={{ fontSize: 15, fontWeight: 400, width: 500, lineHeight: 1.7 }}>{product.detailed_desc}</p>
 
                 <div style={{marginBottom: 10}}>
                     <h3 style={{marginBottom: 5}}>Size</h3>
@@ -117,13 +114,13 @@ function ProductDetailsSection({ setOpenSidebar }) {
             </div>
 
             <div style={{width: 1026}}>
-                <p style={{marginBottom: 30}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nesciunt accusamus tempore exercitationem in, fuga architecto explicabo harum facilis sunt?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quidem earum odio, tempore at impedit inventore explicabo quaerat in consectetur numquam deleniti ducimus, magni necessitatibus repellendus. A perspiciatis illo recusandae cum? Eius eaque eligendi corporis dolore quas et sunt vitae, magni molestiae rem quisquam, vel necessitatibus labore veniam nostrum nobis!</p>
+                <p style={{marginBottom: 30}}>{product.detailed_desc}</p>
+                <p>{product.detailed_desc2}</p>
             </div>
 
             <div style={{display: 'flex', gap: 30}}>
-                <img src="https://images.unsplash.com/photo-1506898667547-42e22a46e125?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZ1cm5pdHVyZXxlbnwwfHwwfHx8Mg%3D%3D" />
-                <img src="https://images.unsplash.com/photo-1506898667547-42e22a46e125?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZ1cm5pdHVyZXxlbnwwfHwwfHx8Mg%3D%3D" />
+                <img src={`${product.img}`} />
+                <img src={`${product.img}`} />
             </div>
 
         </section>
