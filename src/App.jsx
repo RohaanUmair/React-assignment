@@ -32,7 +32,7 @@ function App() {
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/checkout' element={<CheckoutPage />} />
         <Route path='/cart' element={<CartPage />} />
-        <Route path='/product' element={<SingleProduct />} />
+        <Route path='/product:id' element={<SingleProduct />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/signup' element={<SignupPage />} />
         <Route path='/signedin' element={<SignedInPage handleSignOut={handleSignOutBtn} />} />

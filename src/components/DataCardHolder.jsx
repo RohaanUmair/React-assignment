@@ -32,6 +32,7 @@ function DataCardHolder({ showMoreBtn, n }) {
                 price={price}
                 isNew={isNew}
                 discount={discount}
+                id={id}
               />
             );
           })}

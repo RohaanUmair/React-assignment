@@ -4,29 +4,34 @@ import { PiStarHalfFill } from "react-icons/pi";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
+import productsData from '../../data/data.json';
+import { useParams } from 'react-router-dom';
 
 
 
 function ProductDetailsSection({ setOpenSidebar }) {
+    const { id } = useParams();
+    const product = productsData.find((product) => product.id == id);
+
     return (
         <>
         <section className={styles.upper_sec}>
 
             <div className={styles.product_imgs}>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1506898667547-42e22a46e125?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZ1cm5pdHVyZXxlbnwwfHwwfHx8Mg%3D%3D" />
-                    <img src="https://images.unsplash.com/photo-1506898667547-42e22a46e125?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZ1cm5pdHVyZXxlbnwwfHwwfHx8Mg%3D%3D" />
-                    <img src="https://images.unsplash.com/photo-1506898667547-42e22a46e125?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZ1cm5pdHVyZXxlbnwwfHwwfHx8Mg%3D%3D" />
-                    <img src="https://images.unsplash.com/photo-1506898667547-42e22a46e125?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZ1cm5pdHVyZXxlbnwwfHwwfHx8Mg%3D%3D" />
+                    <img src={product.img} />
+                    <img src={product.img} />
+                    <img src={product.img} />
+                    <img src={product.img} />
                 </div>
 
-                <img src="https://images.unsplash.com/photo-1506898667547-42e22a46e125?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZ1cm5pdHVyZXxlbnwwfHwwfHx8Mg%3D%3D" />
+                <img src={product.img} />
             </div>
 
 
             <div className={styles.main_details}>
-                <h1 style={{ fontSize: 42, fontWeight: 400 }}>Asgaard sofa</h1>
-                <h2 style={{ fontSize: 24, fontWeight: 500, color: '#9f9f9f' }}>Rs. 250,000.00</h2>
+                <h1 style={{ fontSize: 42, fontWeight: 400 }}>{product.title}</h1>
+                <h2 style={{ fontSize: 24, fontWeight: 500, color: '#9f9f9f' }}>Rs. {product.price}</h2>
 
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                     <div>
