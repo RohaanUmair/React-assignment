@@ -7,6 +7,7 @@ import {
     onAuthStateChanged,
     signOut,
 } from "firebase/auth";
+// import { useState } from "react";
 
 
 const firebaseConfig = {
@@ -23,18 +24,18 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 const auth = getAuth(app);
+// const [isLogin, setIsLogin] = useState(false);
 
 
-
-function isUserLoggedIn() {
+async function isUserLoggedIn() {
     onAuthStateChanged(auth, (user) => {
         if (user) {
             const uid = user.uid;
             console.log('User Logged In');
-            return true;
+            // setIsLogin(true);
         } else {
             console.log('User Not Logged In');
-            return false;
+            // setIsLogin(false);
         }
     });
 }
@@ -66,12 +67,15 @@ function loginUser(auth, email, password) {
 }
 
 
-signOut(auth)
-    .then(() => {
-
-    })
-    .catch((error) => {
-    });
+function handleSignOut(auth) {
+    signOut(auth)
+        .then(() => {
+            alert('Logged out');
+        })
+        .catch((error) => {
+            alert(error);
+        });
+}
 
 
 
@@ -90,5 +94,5 @@ export {
     createAccount,
     loginUser,
     isUserLoggedIn,
-    signOut
+    handleSignOut,
 }

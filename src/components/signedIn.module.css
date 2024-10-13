@@ -1,0 +1,36 @@
+.gotoShopBtnStyles{
+    background-color: #b88e2f;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-family: "Poppins";
+    font-size: 19px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.gotoShopBtnStyles:hover{
+    box-shadow: 2px 2px 2px 0px black;
+}
+
+.signOutBtnStyles{
+    background-color: white;
+    margin-left: 10px;
+    color: #b88e2f;
+    border: 1px solid #b88e2f;
+    font-weight: 500;
+    width: 200px;
+    height: 50px;
+    font-family: "Poppins";
+    font-size: 19px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.signOutBtnStyles:hover{
+    background-color: rgba(237, 43, 43, 0.638);
+    color: white;
+}
+
+.gotoShopBtnStyles:active, .signOutBtnStyles:active{
+    scale: 0.9;
+}

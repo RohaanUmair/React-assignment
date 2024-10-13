@@ -21,7 +21,6 @@ function SignupForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
         createAccount(auth, formData.signupEmail, formData.signupPassword) 
-        toast.success('Done')       
     }
 
 

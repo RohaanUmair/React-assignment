@@ -12,14 +12,18 @@ import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import ScrollToTop from './components/ScrollToTop';
 import SignedInPage from './pages/SignedInPage';
-import { isUserLoggedIn } from './utils/firebase';
+import { auth, handleSignOut } from './utils/firebase';
 
 function App() {
+  const handleSignOutBtn = () => {
+    handleSignOut(auth);
+  }
+
   return (
     <>
     <BrowserRouter>
 
-      <Header isUserLoggedIn={isUserLoggedIn} />
+      <Header />
         <ScrollToTop />
 
       <Routes>
@@ -31,7 +35,7 @@ function App() {
         <Route path='/product' element={<SingleProduct />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/signup' element={<SignupPage />} />
-        <Route path='/signedin' element={<SignedInPage />} />
+        <Route path='/signedin' element={<SignedInPage handleSignOut={handleSignOutBtn} />} />
       </Routes>
 
       <Footer />
