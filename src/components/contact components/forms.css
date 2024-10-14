@@ -20,6 +20,9 @@
     font-family: "Poppins";
     font-weight: 400;
 }
+.form-input-sec input:focus{
+    border: 1px solid #b88e2f;
+}
 
 .contact-form{
     display: flex;

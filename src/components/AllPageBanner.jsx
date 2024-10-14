@@ -4,9 +4,9 @@ import styles from "./allPageBanner.module.css";
 function AllPageBanner({ text }) {
   return (
     <div className={styles.banner}>
-      <img src="src/assets/all-page-banner.jpg" />
+      <img src="/assets/all-page-banner.jpg" />
       <div className={styles.blur}>
-        <img src="src/assets/Logo.png" />
+        <img src="/assets/Logo.png" />
         <div className={styles.text_holder}>
           <h1>{text}</h1>
           <h2>

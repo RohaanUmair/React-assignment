@@ -5,7 +5,7 @@ function ShareSection() {
     <div className={styles.share_sec}>
       <p>Share your setup with</p>
       <h1>#FurniroFurniture</h1>
-      <img src="src/assets/share-images.png" />
+      <img src="/assets/share-images.png" />
     </div>
   )
 }

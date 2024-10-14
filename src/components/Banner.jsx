@@ -4,7 +4,7 @@ import './banner.css';
 export default function Banner() {
     return (
         <section className='hero-section'>
-            <img src="src/assets/homePageBanner.png" alt="bg" className="banner-img" />
+            <img src="/assets/homePageBanner.png" alt="bg" className="banner-img" />
             <section className='rectangle'>
                 <h2>New Arrival</h2>
                 <h1>Discover Our <br /> New Collection</h1>

@@ -18,6 +18,6 @@
     font-size: 16px;
     font-weight: 400;
     border-left: 2px solid #9f9f9f;
-    width: 142px;
-    text-align: center;
+    padding-left: 20px;
+    text-align: left;
 }

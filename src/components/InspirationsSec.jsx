@@ -18,8 +18,8 @@ function InspirationsSec() {
       </div>
 
       <div className={styles.right}>
-        <img src="src/assets/inspiration-imgs/Rectangle 24.png" />
-        <img src="src/assets/inspiration-imgs/Rectangle 25.png" />
+        <img src="/assets/inspiration-imgs/Rectangle 24.png" />
+        <img src="/assets/inspiration-imgs/Rectangle 25.png" />
       </div>
     </div>
   );

@@ -10,9 +10,9 @@ export default function ProductTypes() {
             </div>
 
             <section className='card-holder'>
-                <TypesCard imgSrc='src/assets/type-dining.png' type='Dining' />
-                <TypesCard imgSrc='src/assets/type-living.png' type='Living' />
-                <TypesCard imgSrc='src/assets/type-bedroom.png' type='Bedroom' />
+                <TypesCard imgSrc='/assets/type-dining.png' type='Dining' />
+                <TypesCard imgSrc='/assets/type-living.png' type='Living' />
+                <TypesCard imgSrc='/assets/type-bedroom.png' type='Bedroom' />
             </section>
         </section>
     )
