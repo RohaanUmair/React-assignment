@@ -5,7 +5,9 @@ import React from "react";
 import DataCard from "./DataCard";
 import { Link } from "react-router-dom";
 
-function DataCardHolder({ showMoreBtn, n }) {
+function DataCardHolder({ showMoreBtn, n, handleAddToCart }) {
+
+
   let data = productsData;
   if (n){
      data = productsData.slice(0 ,n);
@@ -33,6 +35,7 @@ function DataCardHolder({ showMoreBtn, n }) {
                 isNew={isNew}
                 discount={discount}
                 id={id}
+                onAddToCart={handleAddToCart}
               />
             );
           })}

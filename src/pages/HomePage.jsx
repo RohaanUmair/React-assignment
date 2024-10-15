@@ -4,13 +4,13 @@ import InspirationsSec from "../components/InspirationsSec";
 import ProductTypes from "../components/ProductTypes";
 import ShareSection from "../components/ShareSection";
 
-export default function HomePage() {
+export default function HomePage({ handleAddToCart }) {
 
   return (
     <>
       <Banner />
       <ProductTypes />
-      <HomePageProducts />
+      <HomePageProducts handleAddToCart={handleAddToCart} />
       <InspirationsSec />
       <ShareSection />
     </>

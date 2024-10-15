@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import {
@@ -7,8 +8,15 @@ import {
     onAuthStateChanged,
     signOut,
 } from "firebase/auth";
-import Swal from "sweetalert2";
-// import { useState } from "react";
+import {
+    getFirestore,
+    collection,
+    addDoc,
+    query,
+    where,
+    getDocs
+} from "firebase/firestore";
+
 
 
 const firebaseConfig = {
@@ -25,7 +33,6 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 const auth = getAuth(app);
-// const [isLogin, setIsLogin] = useState(false);
 
 
 async function isUserLoggedIn() {
@@ -33,10 +40,8 @@ async function isUserLoggedIn() {
         if (user) {
             const uid = user.uid;
             console.log('User Logged In');
-            // setIsLogin(true);
         } else {
             console.log('User Not Logged In');
-            // setIsLogin(false);
         }
     });
 }
@@ -52,20 +57,20 @@ function createAccount(auth, email, password) {
                 title: "Logged In ",
                 showConfirmButton: false,
                 timer: 1500
-              });
+            });
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
 
-            if (errorMessage == 'Firebase: Password should be at least 6 characters (auth/weak-password).'){
+            if (errorMessage == 'Firebase: Password should be at least 6 characters (auth/weak-password).') {
                 Swal.fire({
                     position: "center",
                     icon: "warning",
                     title: "Password is too weak",
                     showConfirmButton: false,
                     timer: 1500
-                  });
+                });
             }
         });
 }
@@ -81,20 +86,20 @@ function loginUser(auth, email, password) {
                 title: "Logged In ",
                 showConfirmButton: false,
                 timer: 1500
-              });
+            });
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            
-            if (errorMessage == 'Firebase: Error (auth/invalid-credential).'){
+
+            if (errorMessage == 'Firebase: Error (auth/invalid-credential).') {
                 Swal.fire({
                     position: "center",
                     icon: "error",
                     title: "Wrong Credentials",
                     showConfirmButton: false,
                     timer: 1000
-                  });
+                });
             }
             else {
                 Swal.fire({
@@ -103,7 +108,7 @@ function loginUser(auth, email, password) {
                     title: "Please Try Again later",
                     showConfirmButton: false,
                     timer: 1500
-                  });
+                });
             }
 
         });
@@ -122,6 +127,34 @@ function handleSignOut(auth) {
 
 
 
+const db = getFirestore(app);
+
+
+async function addProductToCart(userEmail, productId) {
+    try {
+        const docRef = await addDoc(collection(db, "cartProducts"), {
+            userEmail,
+            productId
+        });
+        console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+        console.error("Error adding document: ", e);
+    }
+}
+
+
+async function getAddedToCarts(setCartProducts, email) {
+    const q = query(collection(db, "cartProducts"), where("userEmail", "==", email));
+
+    const querySnapshot = await getDocs(q);
+    const products = [];
+    querySnapshot.forEach((doc) => {
+        console.log(doc.data());
+        products.push(doc.data());
+    });
+
+    setCartProducts(products);
+}
 
 
 
@@ -138,4 +171,6 @@ export {
     loginUser,
     isUserLoggedIn,
     handleSignOut,
+    addProductToCart,
+    getAddedToCarts
 }

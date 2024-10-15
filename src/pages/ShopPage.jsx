@@ -4,7 +4,7 @@ import DataCardHolder from "../components/DataCardHolder";
 import SortSection from "../components/shop components/SortSection";
 import SwitchPagesBtn from "../components/shop components/SwitchPagesBtn";
 
-function ShopPage() {
+function ShopPage({ handleAddToCart }) {
   const sectionStyles = {
     width: 392,
     display: "flex",
@@ -38,7 +38,7 @@ function ShopPage() {
       <SortSection />
 
       <div style={{ marginTop: "40px" }}>
-        <DataCardHolder />
+        <DataCardHolder handleAddToCart={handleAddToCart} />
       </div>
 
       <section style={sectionStyles}>

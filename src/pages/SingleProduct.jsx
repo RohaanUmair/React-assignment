@@ -7,7 +7,7 @@ import productsData from '../data/data.json';
 import { useParams } from "react-router-dom";
 
 
-function SingleProduct() {
+function SingleProduct({ handleAddToCart }) {
     const { id } = useParams();
     const product = productsData.find((product) => product.id == id);    
 
@@ -21,7 +21,7 @@ function SingleProduct() {
         <ProductDetailsSection product={product} setOpenSidebar={setOpenSidebar} />
         <div style={{marginBottom: 40}}>
             <h1 style={h1Styles}>Related Products</h1>
-            <DataCardHolder showMoreBtn n={4} />
+            <DataCardHolder showMoreBtn n={4} handleAddToCart={handleAddToCart} />
         </div>
 
         {

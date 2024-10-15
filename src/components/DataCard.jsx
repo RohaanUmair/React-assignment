@@ -3,9 +3,11 @@ import { IoShareSocial } from "react-icons/io5";
 import { GoArrowSwitch } from "react-icons/go";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { addProductToCart } from "../utils/firebase";
+import { useEffect, useState } from "react";
 
 
-function DataCard({ imgSrc, title, desc, price, isNew, discount, id }) {
+function DataCard({ imgSrc, title, desc, price, isNew, discount, id, onAddToCart }) {
   const isNewBoolean = isNew === "true";
 
 
@@ -29,7 +31,10 @@ function DataCard({ imgSrc, title, desc, price, isNew, discount, id }) {
           <div style={{ width: '100%', textAlign: 'center', position: 'absolute' }}>
 
 
-            <button>Add to cart</button>
+            <button onClick={(e) => {
+              e.preventDefault();
+              onAddToCart(id);
+            }}>Add to cart</button>
 
             <div className="upper">
               <div className="sub-div">
