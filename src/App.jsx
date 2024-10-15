@@ -20,12 +20,23 @@ function App() {
   const handleSignOutBtn = () => {
     handleSignOut(auth);
   }
+  
+  const [cartProducts, setCartProducts] = useState([]);
 
   const handleAddToCart = (id) => {
-    addProductToCart(auth.currentUser.email, id);
-  }
-
-  const [cartProducts, setCartProducts] = useState([]);
+    const userEmail = auth.currentUser?.email;
+    if (userEmail) {
+      addProductToCart(userEmail, id)
+        .then(() => {
+          getAddedToCarts(setCartProducts, userEmail);
+        })
+        .catch((error) => {
+          console.error("Error adding product to cart: ", error);
+        });
+    } else {
+      console.error("User is not logged in");
+    }
+  };
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -38,6 +49,7 @@ function App() {
 
     return () => unsubscribe();
   }, []);
+  
 
   return (
     <>

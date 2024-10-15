@@ -1,8 +1,20 @@
 import CartItem from './CartItem';
 import './mainSection.css';
 import data from '../../data/data.json';
+import { useState } from 'react';
 
 function MainSection({ cartProductsArray }) {
+  const [cartItems, setCartItems] = useState([]);
+
+  const calculateTotal = () => {
+    return cartProductsArray.reduce((acc, item) => {
+      const product = data.find((dataItem) => dataItem.id === item.productId);
+      return acc + Number(product.price);
+    }, 0);
+  };
+
+  const total = calculateTotal();
+
   return (
     <div className="cart-main-sec">
 
@@ -31,12 +43,12 @@ function MainSection({ cartProductsArray }) {
         <h1 style={{ marginBottom: 20 }}>Cart Totals</h1>
         <div>
           <p className='heading'>Subtotal</p>
-          <p id='sub-total'>Rs. 250,000.00</p>
+          <p id='sub-total'>Rs. {total}</p>
         </div>
 
         <div>
           <p className='heading'>Total</p>
-          <p id='total'>Rs. 250,000.00</p>
+          <p id='total'>Rs. {total}</p>
         </div>
 
         <button id='checkout-btn' onClick={() => console.log(cartProductsArray)}>Check Out</button>

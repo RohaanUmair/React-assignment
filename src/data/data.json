@@ -2,7 +2,7 @@
   {
     "title": "Slytherine",
     "desc": "Stylish Cafe Chair",
-    "price": "2.500.000",
+    "price": "2500.000",
     "img": "/assets/data-imgs/image 1.png",
     "isNew": "false",
     "discount": 30,
@@ -13,7 +13,7 @@
   {
     "title": "Leviosa",
     "desc": "Stylish Cafe Chair",
-    "price": "2.500.000",
+    "price": "2500.000",
     "img": "/assets/data-imgs/image 2.png",
     "isNew": "false",
     "discount": 0,
@@ -24,7 +24,7 @@
   {
     "title": "Lolito",
     "desc": "Luxury Big Sofa",
-    "price": "7.000.000",
+    "price": "7000.000",
     "img": "/assets/data-imgs/image 3.png",
     "isNew": "false",
     "discount": 50,
@@ -46,7 +46,7 @@
   {
     "title": "Grifo",
     "desc": "Night Lamp",
-    "price": "1.500.000",
+    "price": "1500.000",
     "img": "/assets/data-imgs/image 9.png",
     "isNew": "false",
     "discount": 30,
@@ -57,7 +57,7 @@
   {
     "title": "Muggo",
     "desc": "Stylish Cafe Chair",
-    "price": "2.500.000",
+    "price": "2500.000",
     "img": "/assets/data-imgs/image 6.png",
     "isNew": "false",
     "discount": 0,
@@ -68,7 +68,7 @@
   {
     "title": "Pingky",
     "desc": "Cute Bed Sheet",
-    "price": "7.000.000",
+    "price": "7000.000",
     "img": "/assets/data-imgs/image 7.png",
     "isNew": "false",
     "discount": 50,
@@ -90,7 +90,7 @@
   {
     "title": "Slytherine",
     "desc": "Stylish Cafe Chair",
-    "price": "2.500.000",
+    "price": "2500.000",
     "img": "/assets/data-imgs/image 1.png",
     "isNew": "false",
     "discount": 30,
@@ -101,7 +101,7 @@
   {
     "title": "Leviosa",
     "desc": "Stylish Cafe Chair",
-    "price": "2.500.000",
+    "price": "2500.000",
     "img": "/assets/data-imgs/image 2.png",
     "isNew": "false",
     "discount": 0,
@@ -112,7 +112,7 @@
   {
     "title": "Lolito",
     "desc": "Luxury Big Sofa",
-    "price": "7.000.000",
+    "price": "7000.000",
     "img": "/assets/data-imgs/image 3.png",
     "isNew": "false",
     "discount": 50,
@@ -134,7 +134,7 @@
   {
     "title": "Grifo",
     "desc": "Night Lamp",
-    "price": "1.500.000",
+    "price": "1500.000",
     "img": "/assets/data-imgs/image 9.png",
     "isNew": "false",
     "discount": 30,
@@ -145,7 +145,7 @@
   {
     "title": "Muggo",
     "desc": "Stylish Cafe Chair",
-    "price": "2.500.000",
+    "price": "2500.000",
     "img": "/assets/data-imgs/image 6.png",
     "isNew": "false",
     "discount": 0,
@@ -156,7 +156,7 @@
   {
     "title": "Pingky",
     "desc": "Cute Bed Sheet",
-    "price": "7.000.000",
+    "price": "7000.000",
     "img": "/assets/data-imgs/image 7.png",
     "isNew": "false",
     "discount": 50,
