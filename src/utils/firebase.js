@@ -16,6 +16,8 @@ import {
     where,
     getDocs
 } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 
 
@@ -158,6 +160,19 @@ async function getAddedToCarts(setCartProducts, email) {
 
 
 
+function loginFirst() {
+    const navigate = useNavigate();
+  
+    useEffect(() => {
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          const uid = user.uid;
+        } else {
+          navigate('/login');
+        }
+      });
+    }, [navigate]);
+}
 
 
 
@@ -172,5 +187,6 @@ export {
     isUserLoggedIn,
     handleSignOut,
     addProductToCart,
-    getAddedToCarts
+    getAddedToCarts,
+    loginFirst
 }

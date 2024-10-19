@@ -3,8 +3,11 @@ import AllPagePinkBanner from "../components/AllPagePinkBanner";
 import DataCardHolder from "../components/DataCardHolder";
 import SortSection from "../components/shop components/SortSection";
 import SwitchPagesBtn from "../components/shop components/SwitchPagesBtn";
+import { loginFirst } from "../utils/firebase";
 
 function ShopPage({ handleAddToCart }) {
+  loginFirst();
+
   const sectionStyles = {
     width: 392,
     display: "flex",

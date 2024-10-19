@@ -5,9 +5,12 @@ import PinkHeader from "../components/single-product components/PinkHeader";
 import ProductDetailsSection from "../components/single-product components/ProductDetailsSection";
 import productsData from '../data/data.json';
 import { useParams } from "react-router-dom";
+import { loginFirst } from "../utils/firebase";
 
 
 function SingleProduct({ handleAddToCart, cartProductsArray, total }) {
+    loginFirst();
+
     const { id } = useParams();
     const product = productsData.find((product) => product.id == id);    
 

@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import './App.css'
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -20,7 +20,7 @@ import { onAuthStateChanged } from 'firebase/auth';
 function App() {
   const [cartProducts, setCartProducts] = useState([]);
   const [total, setTotal] = useState(0);
-
+  
   const handleAddToCart = (id) => {
     const userEmail = auth.currentUser?.email;
     if (userEmail) {
