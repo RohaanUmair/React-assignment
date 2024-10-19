@@ -2,11 +2,11 @@ import AllPageBanner from "../components/AllPageBanner";
 import AllPagePinkBanner from "../components/AllPagePinkBanner";
 import MainSection from "../components/cart components/MainSection";
 
-function CartPage({ cartProductsArray }) {
+function CartPage({ cartProductsArray, total }) {
   return (
     <>
     <AllPageBanner text={'Cart'} />
-    <MainSection cartProductsArray={cartProductsArray} />
+    <MainSection cartProductsArray={cartProductsArray} total={total} />
     <AllPagePinkBanner />
     </>
   )

@@ -1,19 +1,9 @@
 import CartItem from './CartItem';
 import './mainSection.css';
 import data from '../../data/data.json';
-import { useState } from 'react';
 
-function MainSection({ cartProductsArray }) {
-  const [cartItems, setCartItems] = useState([]);
 
-  const calculateTotal = () => {
-    return cartProductsArray.reduce((acc, item) => {
-      const product = data.find((dataItem) => dataItem.id === item.productId);
-      return acc + Number(product.price);
-    }, 0);
-  };
-
-  const total = calculateTotal();
+function MainSection({ cartProductsArray, total }) {
 
   return (
     <div className="cart-main-sec">
