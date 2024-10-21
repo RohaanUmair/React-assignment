@@ -2,14 +2,14 @@ import './cartItem.css';
 import { RiDeleteBin7Fill } from "react-icons/ri";
 
 
-function CartItem({ title, price, img }) {
+function CartItem({ title, price, img, quantity }) {
   return (
     <div className='cart-item'>
        <img src={img} />
        <p className='sub-heading-part' style={{width: 108}}>{title}</p>
        <p className='sub-heading-part'>Rs. {price}</p>
-       <p className='sub-heaing-quantity'>1</p>
-       <p className='sub-heading-total'>Rs. {price}</p>
+       <p className='sub-heaing-quantity'>{quantity}</p>
+       <p className='sub-heading-total'>Rs. {price * quantity}</p>
        <RiDeleteBin7Fill id='del-icon' />
     </div>
   )

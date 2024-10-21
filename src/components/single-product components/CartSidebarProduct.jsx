@@ -2,7 +2,7 @@ import styles from './cartSidebar.module.css';
 import { IoMdCloseCircle } from "react-icons/io";
 
 
-function CartSidebarProduct({ title, price, img }) {
+function CartSidebarProduct({ title, price, img, quantity }) {
     return (
         <div className={styles.item}>
 
@@ -10,7 +10,7 @@ function CartSidebarProduct({ title, price, img }) {
 
             <div>
                 <h1>{title}</h1>
-                <p>1 X <span style={{marginLeft: 10}}> Rs. {price}</span></p>
+                <p>{quantity} X <span style={{marginLeft: 10}}> Rs. {price}</span></p>
             </div>
 
             <IoMdCloseCircle className={styles.icon} />

@@ -29,19 +29,9 @@ function App() {
         .then(() => {
           getAddedToCarts(setCartProducts, userEmail);
           console.log(cartProducts);
-          Swal.fire({
-            position: "center",
-            icon: "success",
-            title: "Product added to Cart",
-            showConfirmButton: false,
-            timer: 1000
-          });
-        })
-        .catch((error) => {
-          console.error("Error adding product to cart: ", error);
         });
     } else {
-      console.error("User is not logged in");
+      alert("User is not logged in");
     }
   };
 
@@ -50,11 +40,10 @@ function App() {
     const calculateTotal = () => {
       return cartProducts.reduce((acc, item) => {
         const product = data.find((dataItem) => dataItem.id == item.productId);
-        console.log(acc + product.price)
-        return acc + Number(product.price);
+        return acc + Number(product.price * item.quantity);
       }, 0);
     };
-    setTotal(calculateTotal())
+    setTotal(calculateTotal());
 
   }, [cartProducts]);
 

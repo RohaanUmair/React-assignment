@@ -139,10 +139,25 @@ async function addProductToCart(userEmail, productId) {
             productId
         });
         console.log("Document written with ID: ", docRef.id);
+        Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Product added to Cart",
+            showConfirmButton: false,
+            timer: 1000
+        });
     } catch (e) {
+        Swal.fire({
+            position: "center",
+            icon: "error",
+            title: "Failed adding to cart",
+            showConfirmButton: false,
+            timer: 1000
+        });
         console.error("Error adding document: ", e);
     }
 }
+
 
 
 async function getAddedToCarts(setCartProducts, email) {
@@ -150,28 +165,41 @@ async function getAddedToCarts(setCartProducts, email) {
 
     const querySnapshot = await getDocs(q);
     const products = [];
+    const finalProducts = [];
+
     querySnapshot.forEach((doc) => {
-        console.log(doc.data());
-        products.push(doc.data());
+        const product = doc.data();
+        products.push(product);
     });
 
-    setCartProducts(products);
-    console.log(products);
+    products.forEach((product) => {
+        const { productId } = product;
+        const existingProduct = finalProducts.find((p) => p.productId === productId);
+        if (existingProduct) {
+            existingProduct.quantity += 1;
+        } else {
+            finalProducts.push({ ...product, quantity: 1 });
+        }
+    });
+
+    setCartProducts(finalProducts);
+    console.log(finalProducts);
 }
+
 
 
 
 function loginFirst() {
     const navigate = useNavigate();
-  
+
     useEffect(() => {
-      onAuthStateChanged(auth, (user) => {
-        if (user) {
-          const uid = user.uid;
-        } else {
-          navigate('/login');
-        }
-      });
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                const uid = user.uid;
+            } else {
+                navigate('/login');
+            }
+        });
     }, [navigate]);
 }
 
