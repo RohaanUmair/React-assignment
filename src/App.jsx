@@ -16,11 +16,12 @@ import data from './data/data.json'
 import { auth, handleSignOut, addProductToCart, getAddedToCarts } from './utils/firebase';
 import { useEffect, useState } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
+import Swal from 'sweetalert2';
 
 function App() {
   const [cartProducts, setCartProducts] = useState([]);
   const [total, setTotal] = useState(0);
-  
+
   const handleAddToCart = (id) => {
     const userEmail = auth.currentUser?.email;
     if (userEmail) {
@@ -28,6 +29,13 @@ function App() {
         .then(() => {
           getAddedToCarts(setCartProducts, userEmail);
           console.log(cartProducts);
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Product added to Cart",
+            showConfirmButton: false,
+            timer: 1000
+          });
         })
         .catch((error) => {
           console.error("Error adding product to cart: ", error);
@@ -39,13 +47,12 @@ function App() {
 
 
   useEffect(() => {
-    const calculateTotal = () => {   
-      
-        return cartProducts.reduce((acc, item) => {
-          const product = data.find((dataItem) => dataItem.id == item.productId);
-          console.log(acc + product.price)
-          return acc + Number(product.price);
-        }, 0);
+    const calculateTotal = () => {
+      return cartProducts.reduce((acc, item) => {
+        const product = data.find((dataItem) => dataItem.id == item.productId);
+        console.log(acc + product.price)
+        return acc + Number(product.price);
+      }, 0);
     };
     setTotal(calculateTotal())
 

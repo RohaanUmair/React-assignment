@@ -156,6 +156,7 @@ async function getAddedToCarts(setCartProducts, email) {
     });
 
     setCartProducts(products);
+    console.log(products);
 }
 
 

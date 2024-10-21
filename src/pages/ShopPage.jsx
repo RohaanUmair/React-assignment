@@ -1,3 +1,4 @@
+import { useState } from "react";
 import AllPageBanner from "../components/AllPageBanner";
 import AllPagePinkBanner from "../components/AllPagePinkBanner";
 import DataCardHolder from "../components/DataCardHolder";
@@ -7,6 +8,10 @@ import { loginFirst } from "../utils/firebase";
 
 function ShopPage({ handleAddToCart }) {
   loginFirst();
+
+
+  const [displayItemsN, setDisplayItemsN] = useState(16);
+
 
   const sectionStyles = {
     width: 392,
@@ -38,10 +43,10 @@ function ShopPage({ handleAddToCart }) {
 
       <AllPageBanner text={"Shop"} />
 
-      <SortSection />
+      <SortSection displayItemsN={displayItemsN} setDisplayItemsN={setDisplayItemsN} />
 
       <div style={{ marginTop: "40px" }}>
-        <DataCardHolder handleAddToCart={handleAddToCart} />
+        <DataCardHolder handleAddToCart={handleAddToCart} n={displayItemsN} />
       </div>
 
       <section style={sectionStyles}>
