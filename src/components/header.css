@@ -38,6 +38,10 @@ header{
     font-size: 17px;
 }
 
+.section2 .icon{
+    display: none;
+}
+
 .section2 ul li:hover{
     color: #b88e2f;
 }
@@ -56,4 +60,45 @@ header{
 
 .section3 .icons:hover{
     color: #b88e2f;
+}
+
+@media (max-width: 500px) {
+    header{
+        justify-content: start;
+        height: 90px;
+        width: 100dvw;
+    }
+
+    .section1{
+        padding: 0;
+        width: 50%;
+    }
+
+    .section1 .logo{
+        height: 70px;
+        width: 70px;
+    }
+
+    .section1 .logo-text{
+        font-size: 28px;
+    }
+
+    .section2{
+        width: 50%;
+        justify-content: end;
+        padding-right: 40px;
+    }
+
+    .section2 .icon{
+        font-size: 28px;
+        display: block;
+    }
+
+    .section2 ul{
+        display: none;
+    }
+
+    .section3{
+        display: none;
+    }
 }

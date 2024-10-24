@@ -28,21 +28,6 @@ function App() {
         <ScrollToTop />
         <AppContent />
       </BrowserRouter>
-
-      {/* <BrowserRouter>
-
-        <Header />
-        <ScrollToTop />
-
-
-        
-        <Footer />
-        
-
-        <Routes>
-        </Routes>
-
-      </BrowserRouter> */}
     </>
   )
 }

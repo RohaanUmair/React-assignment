@@ -4,6 +4,8 @@ import { IoSearchOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { AiOutlineMenu } from "react-icons/ai";
+
 
 export default function Header() {
   
@@ -32,6 +34,8 @@ export default function Header() {
           </Link>
 
         </ul>
+
+        <AiOutlineMenu className="icon" />
       </div>
 
 

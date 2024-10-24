@@ -34,7 +34,8 @@
 
 .type-img{
     height: 480px;
-    width: 381px;border-radius: 10px;
+    width: 381px;
+    border-radius: 10px;
 }
 
 .card-heading{
@@ -50,4 +51,29 @@
     width: 100%;
     justify-content: center;
     gap: 25px;
+}
+
+
+@media (max-width: 500px) {
+    .main{
+        height: 100%;
+    }
+
+    .main-heading{
+        font-size: 26px;
+    }
+
+    .main-desc{
+        font-size: 14px;
+        padding-inline: 25px;
+        text-align: center;
+    }
+
+    .img-card-sec, .type-img{
+        width: 350px;
+    }
+
+    .type-img{
+        height: 250px;
+    }
 }

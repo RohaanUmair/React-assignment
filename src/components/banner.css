@@ -62,3 +62,41 @@
 .rectangle button:active{
     scale: 0.9;
 }
+
+
+@media (max-width: 500px) {
+    .banner-img{
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .rectangle{
+        width: 90%;
+        height: 280px;
+        top: 70px;
+        right: 0;
+        padding: 30px 30px 0  38px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .rectangle h2{
+        font-size: 16px;
+    }
+
+    .rectangle h1{
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .rectangle p{
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .rectangle button{
+        width: 111px;
+        height: 37px;
+        font-size: 13px;
+        margin-top: 20px;
+    }
+}

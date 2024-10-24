@@ -5,3 +5,10 @@
     text-align: center;
     margin-block: 40px;
 }
+
+
+@media (max-width: 500px) {
+    .main-heading-our-products{
+        font-size: 34px;
+    }
+}

@@ -16,14 +16,7 @@ function DataCardHolder({ showMoreBtn, n, handleAddToCart }) {
   return (
     <>
       <div className="card-holder">
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "40px",
-            justifyContent: "center",
-          }}
-        >
+        <div className="holder">
           {data.map(({ img, title, desc, price, isNew, discount, id }) => {
             return (
               <DataCard

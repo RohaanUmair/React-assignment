@@ -21,6 +21,13 @@
     flex-wrap: wrap;
 }
 
+.card-holder .holder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
 .title{
     font-weight: 600;
     font-size: 24px;
@@ -160,4 +167,35 @@
 .overlay .sub-div .icons{
     font-size: 16px;
     transform: translate(-2px, 3px);
+}
+
+
+@media (max-width: 500px) {
+    .card{
+        width: 45dvw;
+        height: 300px;
+    }
+
+    .img{
+        height: 150px;
+    }
+
+    .card-holder .holder{
+        width: 100dvw;
+        justify-content: space-evenly;
+        gap: 0;
+        row-gap: 20px;
+    }
+
+    .title{
+        font-size: 18px;
+    }
+
+    .desc{
+        font-size: 12px;
+    }
+
+    .price{
+        font-size: 15px;
+    }
 }
