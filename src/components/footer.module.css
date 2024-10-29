@@ -19,7 +19,6 @@ footer .upper_sec{
 footer .lower_sec{
     width: 1133px;
     justify-content: space-between;
-    width: 1133px;
     margin-inline: auto;
     border-top: 1px solid rgba(0, 0, 0, 0.17);
     display: flex;
@@ -89,4 +88,44 @@ footer .lower_sec p{
     font-weight: 500;
     color: #000000;
     font-family: "Poppins";
+}
+
+
+@media (max-width: 500px) {
+    footer .upper_sec{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 30px;
+    }
+
+    footer .lower_sec{
+        padding: 30px;
+        width: 100%;
+    }
+
+    footer .links, .help{
+        display: none;
+    }
+
+    .heading{
+        margin-bottom: 16px;
+    }
+
+    .under_heading{
+        font-size: 14px;
+    }
+
+    .sub_heading{
+        text-align: center;
+        color: rgb(166, 150, 150);
+        font-weight: bold;
+        margin-top: 40px;
+        padding-top: 10px;
+        border-top: 1px solid #d9d9d9;
+    }
+
+    .email_input{
+        margin-top: 10px;
+    }
 }

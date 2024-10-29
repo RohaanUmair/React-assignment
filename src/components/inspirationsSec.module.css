@@ -62,3 +62,43 @@
     height: 582px;
     width: 404px;
 }
+
+
+@media (max-width: 500px) {
+    .inspirations_sec{
+        flex-direction: column;
+        padding-inline: 25px;
+        height: 100%;
+    }
+
+    .left{
+        width: 100%;
+        margin-block: 40px;
+    }
+
+    .right{
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .left h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .left p{
+        line-height: 20px;
+    }
+
+    .left button{
+        width: 140px;
+        height: 37px;
+        font-size: 13px;
+    }
+
+    .right img{
+        height: 250px;
+        width: 173px;
+    }
+}

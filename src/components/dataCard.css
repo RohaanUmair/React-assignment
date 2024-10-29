@@ -114,7 +114,7 @@
     color: white;
     justify-content: center;
     align-items: center;
-    display: none;
+    display: none; 
     transition: all linear 0.3s;
 }
 
@@ -197,5 +197,13 @@
 
     .price{
         font-size: 15px;
+    }
+
+    .overlay{
+        display: none;
+    }
+
+    .card:hover .overlay{
+        display: none;
     }
 }

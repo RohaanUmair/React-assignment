@@ -34,3 +34,23 @@
 .gotoShopBtnStyles:active, .signOutBtnStyles:active{
     scale: 0.9;
 }
+
+.signedInHeading{
+    font-size: 40px;
+}
+
+
+@media (max-width: 500px) {
+    .signedInHeading{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .gotoShopBtnStyles{
+        width: 140px;
+    }
+
+    .signOutBtnStyles{
+        width: 140px;
+    }
+}
