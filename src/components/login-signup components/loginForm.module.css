@@ -76,3 +76,11 @@
 .whole_page form span:hover{
     text-decoration: underline;
 }
+
+
+
+@media (max-width: 500px) {
+    .whole_page form{
+        scale: 0.8;
+    }
+}

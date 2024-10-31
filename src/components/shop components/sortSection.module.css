@@ -96,3 +96,43 @@
     gap: 20px;
     width: 50%;
 }
+
+
+@media (max-width: 500px) {
+    .section{
+        height: 80px;
+        padding: 0;
+    }
+
+    .left div{
+        width: 25dvw;
+        padding: 0;
+        padding-inline: 8px;
+    }
+
+    .filter_icon{
+        font-size: 18px;
+    }
+
+    .filter{
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .grid_icon, .viewList_icon{
+        font-size: 18px;
+        display: none;
+    }
+
+    .showing_text{
+        font-size: 12px;
+    }
+
+    .right div:nth-child(2){
+        display: none;
+    }
+
+    .right{
+        padding-right: 40px;
+    }
+}

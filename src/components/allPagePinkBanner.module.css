@@ -35,3 +35,18 @@
     font-weight: 500;
     color: #898989;
 }
+
+
+@media (max-width: 500px) {
+    .banner{
+        height: 100%;
+        flex-direction: column;
+        gap: 50px;
+        padding-block: 40px;
+        padding-inline: 80px;
+    }
+
+    .icons{
+        font-size: 100px;
+    }
+}

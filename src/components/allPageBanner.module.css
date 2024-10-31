@@ -61,3 +61,35 @@
     font-weight: 900;
     transform: translateY(5px);
 }
+
+
+@media (max-width: 500px) {
+    .banner{
+        height: 200px;
+    }
+
+    .blur{
+        height: 200px;
+    }
+
+    .blur img{
+        height: 75px;
+        width: 75px;
+    }
+
+    .text_holder h1{
+        font-size: 30px;
+    }
+
+    .text_holder h2{
+        font-size: 16px;
+    }
+
+    .text_holder span{
+        font-size: 16px;
+    }
+
+    .text_holder .arrow{
+        font-size: 19px;
+    }
+}
