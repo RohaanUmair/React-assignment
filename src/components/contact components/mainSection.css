@@ -1,38 +1,77 @@
-.contact-main-sec{
+.contact-main-sec {
     height: 950px;
     width: 100%;
 }
 
-.contact-main-sec .upper-div{
+.contact-main-sec .upper-div {
     text-align: center;
     margin-block: 80px;
 }
 
-.contact-main-sec .lower-div{
+.contact-main-sec .upper-div h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.contact-main-sec .upper-div p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #9f9f9f;
+}
+
+.contact-main-sec .lower-div {
     display: flex;
     justify-content: space-evenly;
 }
 
-.details-card{
+.details-card {
     display: flex;
 }
 
-.details-card div{
+.details-card div {
     width: 212px;
 }
 
-.details-card div h1{
+.details-card div h1 {
     font-size: 24px;
     font-weight: 500;
 }
 
-.details-card div p{
+.details-card div p {
     font-size: 16px;
     font-weight: 400;
 }
 
-.lower-div .details-section{
+.lower-div .details-section {
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+
+@media (max-width: 500px) {
+    .contact-main-sec .upper-div {
+        margin-block: 40px;
+        padding-inline: 35px;
+    }
+
+    .contact-main-sec .upper-div h1{
+        font-size: 28px;
+    }
+
+    .contact-main-sec .upper-div p{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .contact-main-sec .lower-div{
+        flex-direction: column-reverse;
+    }
+
+    .contact-main-sec {
+        height: 100%;
+    }
+    
+    .details-card{
+        padding-left: 10%;
+    }
 }

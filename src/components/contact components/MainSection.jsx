@@ -10,8 +10,8 @@ function MainSection() {
   return (
     <section className="contact-main-sec">
       <div className="upper-div">
-        <h1 style={{ fontSize: 36, fontWeight: 600 }}>Get in Touch With Us</h1>
-        <p style={{ fontSize: 16, fontWeight: 400, color: "#9f9f9f" }}>
+        <h1>Get in Touch With Us</h1>
+        <p>
           For More Information About Our Products & Services. Please Feel Free
           To Drop Us <br /> An Email. Our Staff Always Be There To Help You Out.
           Do Not Hesitate!

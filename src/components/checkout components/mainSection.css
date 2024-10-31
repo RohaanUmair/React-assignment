@@ -125,3 +125,48 @@
     font-family: "Poppins";
     margin-top: 20px;
 }
+
+
+@media (max-width: 500px) {
+    .checkout-main-sec{
+        height: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .checkout-main-sec .checkout-productDetails{
+        width: 100%;
+        scale: 0.9;
+    }
+
+    .checkout-main-sec .checkout-billingDetails{
+        gap: 30px;
+        width: 100%;
+    }
+
+    .chechout-form-section{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .chechout-form-section label{
+        font-size: 16px;
+    }
+
+    .chechout-form-section input{
+        width: 80%;
+    }
+
+    .name-section-inputs{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .heading-billingDetails{
+        padding-top: 20px;
+        text-align: center;
+        border-top: 1px solid #9f9f9f;
+        text-decoration: underline #d9d9d9;
+    }   
+}

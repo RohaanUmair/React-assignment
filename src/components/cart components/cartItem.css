@@ -37,3 +37,32 @@
     font-size: 28px;
     color: #b88e2f;
 }
+
+
+@media (max-width: 500px) {
+    .cart-item{
+        width: 100%;
+        height: 120px;
+        padding-inline: 20px;
+    }
+
+    .cart-item img{
+        height: 80px;
+        width: 80px;
+    }
+
+    .cart-item .sub-heading-part{
+        font-size: 14px;
+        width: 70px;
+    }
+
+    .cart-item .sub-heaing-quantity{
+        width: 24px;
+        height: 24px;
+        font-size: 13px;
+    }
+
+    .cart-item .sub-heading-total{
+        font-size: 13px;
+    }
+}

@@ -42,3 +42,21 @@
     font-weight: 400;
     font-family: "Poppins";
 }
+
+
+@media (max-width: 500px) {
+    .contact-form{
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    
+    .form-input-sec{
+        align-items: center;
+        width: 100%;
+        gap: 18px;
+    }
+
+    .form-input-sec input{
+        width: 85%;
+    }
+}

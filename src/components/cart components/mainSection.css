@@ -71,3 +71,50 @@
     font-weight: 500;
     color: #b88e2f;
 }
+
+#h_product{
+    transform: translateX(60px);
+}
+#h_price{
+    transform: translateX(100px);
+}
+#h_quantity{
+    transform: translatex(42px);
+}
+#h_subtotal{
+    transform: translateX(-38px);
+}
+
+
+@media (max-width: 500px) {
+    .cart-main-sec{
+        flex-direction: column;
+    }
+
+    .cart-main-sec .product-details .header{
+        width: 100%;
+        height: 50px;
+    }
+
+    #h_product{
+        transform: translateX(60px);
+        font-size: 12px;
+    }
+    #h_price{
+        transform: translateX(92px);
+        font-size: 12px;
+    }
+    #h_quantity{
+        transform: translatex(45px);
+        font-size: 12px;
+    }
+    #h_subtotal{
+        transform: translateX(-6px);
+        font-size: 12px;
+    }
+
+    .cart-main-sec .cart-totals{
+        margin-inline: auto;
+    }
+
+}

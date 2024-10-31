@@ -47,6 +47,15 @@
     }
 
     .icons{
-        font-size: 100px;
+        font-size: 70px;
     }
+
+    .primary_div .secondary_div h1{
+        font-size: 22px;
+    }
+
+    .primary_div .secondary_div p{
+        font-size: 17px;
+    }   
+
 }
