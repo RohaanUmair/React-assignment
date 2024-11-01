@@ -21,3 +21,13 @@
     padding-left: 20px;
     text-align: left;
 }
+
+
+@media (max-width: 500px) {
+    .header{
+        height: 80px;
+        padding-left: 20px;
+    }
+
+
+}

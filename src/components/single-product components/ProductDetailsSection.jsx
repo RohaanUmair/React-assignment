@@ -43,7 +43,7 @@ function ProductDetailsSection({ setOpenSidebar, product, handleAddToCart, id })
                         </p>
                     </div>
 
-                    <p style={{ fontSize: 15, fontWeight: 400, width: 500, lineHeight: 1.7 }}>{product.detailed_desc}</p>
+                    <p className={styles.desc}>{product.detailed_desc}</p>
 
                     <div style={{ marginBottom: 10 }}>
                         <h3 style={{ marginBottom: 5 }}>Size</h3>
@@ -78,7 +78,6 @@ function ProductDetailsSection({ setOpenSidebar, product, handleAddToCart, id })
 
                         }>Add To Cart</button>
 
-                        <button className={styles.bottom_btns}>+ Compare</button>
                     </div>
 
                     <div className={styles.small_details}>
@@ -119,7 +118,7 @@ function ProductDetailsSection({ setOpenSidebar, product, handleAddToCart, id })
                     <button style={{ color: '#9f9f9f' }}>Reviews [5]</button>
                 </div>
 
-                <div style={{ width: 1026 }}>
+                <div>
                     <p style={{ marginBottom: 30 }}>{product.detailed_desc}</p>
                     <p>{product.detailed_desc2}</p>
                 </div>
