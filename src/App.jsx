@@ -91,15 +91,21 @@ const AppContent = () => {
 
       <Routes>
         <Route path='/' element={<HomePage handleAddToCart={handleAddToCart} />} />
+
         <Route path='/shop' element={<ShopPage handleAddToCart={handleAddToCart} />} />
+
         <Route path='/contact' element={<ContactPage />} />
-        <Route path='/checkout' element={<CheckoutPage />} />
+
+        <Route path='/checkout' element={<CheckoutPage cartProductsArray={cartProducts} total={total} />} />
+
         <Route path='/cart' element={<CartPage cartProductsArray={cartProducts} total={total} />} />
 
         <Route path='/product/:id' element={<SingleProduct handleAddToCart={handleAddToCart} cartProductsArray={cartProducts} total={total} />} />
 
         <Route path='/signedin' element={<SignedInPage handleSignOut={handleSignOutBtn} />} />
+
         <Route path='/login' element={<LoginPage />} />
+
         <Route path='/signup' element={<SignupPage />} />
       </Routes>
 

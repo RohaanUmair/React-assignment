@@ -1,8 +1,11 @@
 import CartItem from "./CartItem";
 import "./mainSection.css";
 import data from "../../data/data.json";
+import { useNavigate } from "react-router-dom";
 
 function  MainSection({ cartProductsArray, total }) {
+  const navigate = useNavigate();
+
   return (
     <div className="cart-main-sec">
       <div className="product-details">
@@ -45,7 +48,7 @@ function  MainSection({ cartProductsArray, total }) {
 
         <button
           id="checkout-btn"
-          onClick={() => console.log(cartProductsArray)}
+          onClick={() => navigate("/checkout")}
         >
           Check Out
         </button>
