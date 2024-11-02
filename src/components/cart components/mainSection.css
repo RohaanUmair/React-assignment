@@ -97,24 +97,26 @@
     }
 
     #h_product{
-        transform: translateX(60px);
-        font-size: 12px;
+        transform: translateX(40px);
+        font-size: 10px;
     }
     #h_price{
-        transform: translateX(92px);
-        font-size: 12px;
+        transform: translateX(54px);
+        font-size: 10px;
     }
     #h_quantity{
-        transform: translatex(45px);
-        font-size: 12px;
+        transform: translatex(25px);
+        font-size: 10px;
     }
     #h_subtotal{
         transform: translateX(-6px);
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .cart-main-sec .cart-totals{
         margin-inline: auto;
+        width: 90%;
+        
     }
 
 }

@@ -38,6 +38,10 @@
     color: #b88e2f;
 }
 
+#productName{
+    width: 108px;
+}
+
 
 @media (max-width: 500px) {
     .cart-item{
@@ -47,22 +51,26 @@
     }
 
     .cart-item img{
-        height: 80px;
-        width: 80px;
+        height: 60px;
+        width: 60px;
     }
 
     .cart-item .sub-heading-part{
-        font-size: 14px;
+        font-size: 12px;
         width: 70px;
     }
 
     .cart-item .sub-heaing-quantity{
         width: 24px;
         height: 24px;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .cart-item .sub-heading-total{
-        font-size: 13px;
+        font-size: 12px;
+    }
+
+    #productName{
+        width: 55px;
     }
 }

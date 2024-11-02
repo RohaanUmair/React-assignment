@@ -14,7 +14,7 @@ function ShopPage({ handleAddToCart }) {
 
 
   const sectionStyles = {
-    width: 392,
+    width: 340,
     display: "flex",
     justifyContent: "space-around",
     marginTop: 40,
