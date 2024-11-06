@@ -3,10 +3,15 @@ import "./mainSection.css";
 import { FaCircle } from "react-icons/fa";
 import { FaRegCircle } from "react-icons/fa";
 import data from "../../data/data.json";
+import { useContext } from "react";
+import { ValuesContext } from "../ValuesContext";
 
 
-function MainSection({ cartProductsArray, total }) {
-    console.log(cartProductsArray);
+function MainSection() {
+    const { cartProducts, total } = useContext(ValuesContext);
+
+
+    console.log(cartProducts);
 
     return (
         <div className="checkout-main-sec">
@@ -39,7 +44,7 @@ function MainSection({ cartProductsArray, total }) {
                     </div>
 
                     {
-                        cartProductsArray.map((item) => {
+                        cartProducts.map((item) => {
                             const product = data.find((dataItem) => {
                                 return dataItem.id == item.productId;
                             });

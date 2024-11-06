@@ -117,6 +117,12 @@
     height: 40px;
     font-family: "Poppins";
 }
+.footer button:hover{
+    background-color: #b88e2f;
+    color: white;
+    border: 1px solid #b88e2f;
+    cursor: pointer;
+}
 
 .close_icon{
     color: #9f9f9f;

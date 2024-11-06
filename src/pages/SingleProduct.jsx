@@ -7,7 +7,7 @@ import productsData from "../data/data.json";
 import { useParams } from "react-router-dom";
 import { loginFirst } from "../utils/firebase";
 
-function SingleProduct({ handleAddToCart, cartProductsArray, total }) {
+function SingleProduct({ handleAddToCart }) {
     loginFirst();
 
     const { id } = useParams();
@@ -40,8 +40,6 @@ function SingleProduct({ handleAddToCart, cartProductsArray, total }) {
             {openSidebar ? (
                 <CartSidebar
                     setOpenSidebar={setOpenSidebar}
-                    total={total}
-                    cartProductsArray={cartProductsArray}
                 />
             ) : null}
         </>

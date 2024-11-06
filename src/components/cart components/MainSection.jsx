@@ -2,8 +2,12 @@ import CartItem from "./CartItem";
 import "./mainSection.css";
 import data from "../../data/data.json";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { ValuesContext } from "../ValuesContext";
 
-function  MainSection({ cartProductsArray, total }) {
+function  MainSection() {
+  const { cartProducts, total } = useContext(ValuesContext);
+
   const navigate = useNavigate();
 
   return (
@@ -17,7 +21,7 @@ function  MainSection({ cartProductsArray, total }) {
         </div>
 
         <div className="cart_items-listed">
-          {cartProductsArray.map((item) => {
+          {cartProducts.map((item) => {
             const product = data.find((dataItem) => {
               return dataItem.id == item.productId;
             });

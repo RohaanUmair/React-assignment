@@ -54,6 +54,12 @@
     font-family: "Poppins";
     transform: translateY(30px);
 }
+#checkout-btn:hover{
+    background-color: #b88e2f;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
 
 .cart-main-sec .cart-totals .heading{
     font-size: 16px;

@@ -3,8 +3,15 @@ import { IoBagOutline } from "react-icons/io5";
 import { IoIosClose } from "react-icons/io";
 import CartSidebarProduct from "./CartSidebarProduct";
 import data from "../../data/data.json";
+import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { ValuesContext } from "../ValuesContext";
 
-function CartSidebar({ setOpenSidebar, cartProductsArray, total }) {
+function CartSidebar({ setOpenSidebar, }) {
+    const { cartProducts, total } = useContext(ValuesContext);
+
+    const navigate = useNavigate();
+
     return (
         <div className={styles.wholePage_div}>
             <div className={styles.cart_sidebar}>
@@ -27,21 +34,7 @@ function CartSidebar({ setOpenSidebar, cartProductsArray, total }) {
                         </div>
                     </div>
 
-                    {/* {cartProductsArray.map((item) => {
-                        const product = data.find((dataItem) => {
-                            return dataItem.id == item.productId;
-                        });
-                        return (
-                            <CartSidebarProduct
-                                title={product.title}
-                                price={product.price}
-                                img={product.img}
-                                quantity={product.}
-                            />
-                        );
-                    })} */}
-
-                    {cartProductsArray.map((item) => {
+                    {cartProducts.map((item) => {
                         const product = data.find((dataItem) => {
                             return dataItem.id == item.productId;
                         });
@@ -62,8 +55,8 @@ function CartSidebar({ setOpenSidebar, cartProductsArray, total }) {
                     </div>
                 </div>
                 <div className={styles.footer}>
-                    <button>Cart</button>
-                    <button>Checkout</button>
+                    <button onClick={() => navigate('/cart')}>Cart</button>
+                    <button onClick={() => navigate('/checkout')}>Checkout</button>
                     <button>Comparison</button>
                 </div>
             </div>

@@ -3,13 +3,13 @@ import AllPagePinkBanner from "../components/AllPagePinkBanner";
 import MainSection from "../components/cart components/MainSection";
 import { loginFirst } from "../utils/firebase";
 
-function CartPage({ cartProductsArray, total }) {
+function CartPage() {
   loginFirst();
 
   return (
     <>
     <AllPageBanner text={'Cart'} />
-    <MainSection cartProductsArray={cartProductsArray} total={total} />
+    <MainSection />
     <AllPagePinkBanner />
     </>
   )
