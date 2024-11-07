@@ -4,7 +4,7 @@ import styles from "./allPageBanner.module.css";
 function AllPageBanner({ text }) {
   return (
     <div className={styles.banner}>
-      <img src="/assets/all-page-banner.jpg" />
+      <img src="/assets/all-page-banner.webp" />
       <div className={styles.blur}>
         <img src="/assets/Logo.png" />
         <div className={styles.text_holder}>
