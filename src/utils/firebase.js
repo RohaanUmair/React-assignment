@@ -132,13 +132,15 @@ function handleSignOut(auth) {
 const db = getFirestore(app);
 
 
-async function addProductToCart(userEmail, productId) {
+async function addProductToCart(userEmail, productId, productQuantity) {
     try {
-        const docRef = await addDoc(collection(db, "cartProducts"), {
-            userEmail,
-            productId
-        });
-        console.log("Document written with ID: ", docRef.id);
+        for (let i = 0; i < productQuantity; i++) {     
+            const docRef = await addDoc(collection(db, "cartProducts"), {
+                userEmail,
+                productId
+            });
+            console.log("Document written with ID: ", docRef.id);
+        }
         Swal.fire({
             position: "center",
             icon: "success",

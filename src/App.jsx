@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 import './App.css'
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -39,11 +39,13 @@ function App() {
 const AppContent = () => {
 
   const { cartProducts, setCartProducts, total, setTotal } = useContext(ValuesContext);
+  console.log(cartProducts);
+  
 
-  const handleAddToCart = (id) => {
+  const handleAddToCart = (id, productQuantity) => {
     const userEmail = auth.currentUser?.email;
     if (userEmail) {
-      addProductToCart(userEmail, id)
+      addProductToCart(userEmail, id, productQuantity)
         .then(() => {
           getAddedToCarts(setCartProducts, userEmail);
           console.log(cartProducts);

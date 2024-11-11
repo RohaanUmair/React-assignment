@@ -71,6 +71,7 @@
     border: none;
     margin-right: 14px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .bottom_btns{
@@ -174,6 +175,24 @@
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+}
+
+.plusAndMinusBtns{
+    font-size: 18px;
+    font-weight: 400;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+.plusAndMinusBtns:hover{
+    background-color: #9f9f9f15;
+    cursor: pointer;
+}
+.plusAndMinusBtns:active{
+    background-color: #9f9f9f32;
 }
 
 
