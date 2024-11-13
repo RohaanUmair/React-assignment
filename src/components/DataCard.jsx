@@ -33,7 +33,7 @@ function DataCard({ imgSrc, title, desc, price, isNew, discount, id, onAddToCart
 
             <button onClick={(e) => {
               e.preventDefault();
-              onAddToCart(id);
+              onAddToCart(id, 1);
             }}>Add to cart</button>
 
             <div className="upper">

@@ -13,6 +13,13 @@ function ShopPage({ handleAddToCart }) {
   const [displayItemsN, setDisplayItemsN] = useState(16);
 
 
+  const [pageNum, setPageNum] = useState(1);
+
+  const handleSetPages = (page) => {
+    setPageNum(page);
+  }
+
+
   const sectionStyles = {
     width: 340,
     display: "flex",
@@ -36,6 +43,7 @@ function ShopPage({ handleAddToCart }) {
     fontSize: 20,
     fontWeight: 300,
     backgroundColor: "#f9f1e7",
+    cursor: 'pointer'
   };
 
   return (
@@ -50,10 +58,36 @@ function ShopPage({ handleAddToCart }) {
       </div>
 
       <section style={sectionStyles}>
-        <SwitchPagesBtn isSelected pageNum={1} />
-        <SwitchPagesBtn pageNum={2} />
-        <SwitchPagesBtn pageNum={3} />
-        <button style={nextBtnStyles}>Next</button>
+        {
+          pageNum == 1 ? (
+            <>
+              <SwitchPagesBtn isSelected pageNum={1} />
+              <SwitchPagesBtn pageNum={2} onClick={() => handleSetPages(2)} />
+              <SwitchPagesBtn pageNum={3} onClick={() => handleSetPages(3)} />
+              <button style={nextBtnStyles} onClick={() => handleSetPages(2)}>Next</button>
+            </>
+          ) : (null)
+        }
+        {
+          pageNum == 2 ? (
+            <>
+              <SwitchPagesBtn pageNum={1} onClick={() => handleSetPages(1)} />
+              <SwitchPagesBtn isSelected pageNum={2} />
+              <SwitchPagesBtn pageNum={3} onClick={() => handleSetPages(3)} />
+              <button style={nextBtnStyles} onClick={() => handleSetPages(3)}>Next</button>
+            </>
+          ) : (null)
+        }
+        {
+          pageNum == 3 ? (
+            <>
+              <SwitchPagesBtn pageNum={1} onClick={() => handleSetPages(1)} />
+              <SwitchPagesBtn pageNum={2} onClick={() => handleSetPages(2)} />
+              <SwitchPagesBtn isSelected pageNum={3} />
+              <button style={nextBtnStyles} disabled={true} >Next</button>
+            </>
+          ) : (null)
+        }
       </section>
 
       <AllPagePinkBanner />

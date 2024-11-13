@@ -1,4 +1,4 @@
-function SwitchPagesBtn({ isSelected, pageNum }) {
+function SwitchPagesBtn({ isSelected, pageNum, onClick }) {
   const btnStyles = {
     height: 60,
     width: 60,
@@ -9,9 +9,10 @@ function SwitchPagesBtn({ isSelected, pageNum }) {
     fontSize: 20,
     fontWeight: 400,
     color: isSelected ? "#ffffff" : "black",
+    cursor: 'pointer'
   };
 
-  return <button style={btnStyles}>{pageNum}</button>;
+  return <button onClick={onClick} style={btnStyles}>{pageNum}</button>;
 }
 
 export default SwitchPagesBtn;
