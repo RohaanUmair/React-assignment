@@ -1,4 +1,4 @@
-import DataCardHolder from "./DataCardHolder";
+import DataCardHolder from "../DataCardHolder";
 import "./homePageProducts.css";
 
 export default function HomePageProducts({ handleAddToCart }) {

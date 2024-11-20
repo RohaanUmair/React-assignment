@@ -131,3 +131,11 @@
 .close_icon:hover{
     color: black;
 }
+
+
+
+@media (max-width: 500px) {
+    .wholePage_div .cart_sidebar{
+        width: 100%;
+    }
+}
